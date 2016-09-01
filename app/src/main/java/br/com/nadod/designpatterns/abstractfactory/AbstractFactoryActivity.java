@@ -54,8 +54,11 @@ public class AbstractFactoryActivity extends AppCompatActivity implements
 
         try {
             AbstractPizzaiolo abstractPizzaiolo = AbstractPizzaiolo.createPizzaiolo(date);
-            if (abstractPizzaiolo != null)
+            if (abstractPizzaiolo != null) {
                 dateChoosed.setText(abstractPizzaiolo.cook().get());
+            } else {
+                dateChoosed.setText("Pizzaria fechada");
+            }
         } catch (ParseException e) {
             e.printStackTrace();
         }

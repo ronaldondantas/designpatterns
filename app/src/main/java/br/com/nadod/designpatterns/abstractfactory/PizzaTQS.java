@@ -1,7 +1,5 @@
 package br.com.nadod.designpatterns.abstractfactory;
 
-import android.util.Log;
-
 public class PizzaTQS implements Pizza {
     @Override
     public String get() {

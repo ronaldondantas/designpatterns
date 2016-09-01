@@ -10,6 +10,7 @@ import java.text.ParseException;
 
 import br.com.nadod.designpatterns.abstractfactory.AbstractFactoryActivity;
 import br.com.nadod.designpatterns.abstractfactory.AbstractPizzaiolo;
+import br.com.nadod.designpatterns.memento.MementoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AbstractFactoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button memento = (Button) findViewById(R.id.mementoBut);
+        memento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MementoActivity.class);
                 startActivity(intent);
             }
         });

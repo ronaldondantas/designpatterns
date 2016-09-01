@@ -22,10 +22,10 @@ public abstract class AbstractPizzaiolo {
                 return new PizzaioloTQS();
             } else {
                 Log.d("LOG", "Pizzaria fechada");
+                return null;
             }
         } catch (Exception e) {
             throw e;
         }
-        return null;
     }
 }

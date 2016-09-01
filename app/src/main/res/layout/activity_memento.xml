@@ -7,23 +7,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.nadod.designpatterns.MainActivity">
+    tools:context="br.com.nadod.designpatterns.memento.MementoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-    <Button
-        android:id="@+id/abstractFactoryBut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Abstract Factory"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/mementoBut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Memento"/>
+        <EditText
+            android:id="@+id/etDigit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/undoBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Desfazer"/>
     </LinearLayout>
 
 </RelativeLayout>

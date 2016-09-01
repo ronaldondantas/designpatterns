@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".abstractfactory.AbstractFactoryActivity"></activity>
+        <activity android:name=".abstractfactory.AbstractFactoryActivity" />
+        <activity android:name=".memento.MementoActivity"></activity>
     </application>
 
 </manifest>
