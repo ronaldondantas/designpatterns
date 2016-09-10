@@ -10,6 +10,7 @@ import java.text.ParseException;
 
 import br.com.nadod.designpatterns.abstractfactory.AbstractFactoryActivity;
 import br.com.nadod.designpatterns.abstractfactory.AbstractPizzaiolo;
+import br.com.nadod.designpatterns.mediator.MediatorActivity;
 import br.com.nadod.designpatterns.memento.MementoActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MementoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button mediator = (Button) findViewById(R.id.mediatorBut);
+        mediator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MediatorActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/llAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <Button
+            android:id="@+id/butAddStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Aluno"/>
+
+        <Button
+            android:id="@+id/butAddTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Professor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAmI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tvAmI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:text="Eu sou:"/>
+
+        <RadioButton
+            android:id="@+id/rbAmIStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Aluno"/>
+
+        <RadioButton
+            android:id="@+id/rbAmITeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Professor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSendTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tvSendTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:text="Enviar para:"/>
+
+        <RadioButton
+            android:id="@+id/rbSendToStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Alunos"/>
+
+        <RadioButton
+            android:id="@+id/rbSendToTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Professor"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butSendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"/>
+
+    <TextView
+        android:id="@+id/tvResultSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
