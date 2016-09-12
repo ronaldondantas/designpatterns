@@ -21,7 +21,8 @@
         <activity
             android:name=".memento.MementoActivity"
             android:label="Memento" />
-        <activity android:name=".mediator.MediatorActivity"></activity>
+        <activity android:name=".mediator.MediatorActivity" />
+        <activity android:name=".builder.BuilderActivity"></activity>
     </application>
 
 </manifest>

@@ -13,23 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <Button
-        android:id="@+id/abstractFactoryBut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Abstract Factory"/>
 
-    <Button
-        android:id="@+id/mementoBut"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Memento"/>
+        <Button
+            android:id="@+id/abstractFactoryBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abstract Factory"/>
+
+        <Button
+            android:id="@+id/mementoBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memento"/>
 
         <Button
             android:id="@+id/mediatorBut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mediator"/>
+
+        <Button
+            android:id="@+id/builderBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Builder"/>
     </LinearLayout>
 
 </RelativeLayout>
