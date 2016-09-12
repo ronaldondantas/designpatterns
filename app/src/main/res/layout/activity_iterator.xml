@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvTabuleiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tabuleiro"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvPlayerA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Jogador A"/>
+
+    <TextView
+        android:id="@+id/tvCardsA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvPlayerB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Jogador B"/>
+
+
+    <TextView
+        android:id="@+id/tvCardsB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/butRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rodar Round"/>
+
+    <TextView
+        android:id="@+id/tvResultGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+</LinearLayout>

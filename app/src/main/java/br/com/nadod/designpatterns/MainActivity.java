@@ -11,6 +11,7 @@ import java.text.ParseException;
 import br.com.nadod.designpatterns.abstractfactory.AbstractFactoryActivity;
 import br.com.nadod.designpatterns.abstractfactory.AbstractPizzaiolo;
 import br.com.nadod.designpatterns.builder.BuilderActivity;
+import br.com.nadod.designpatterns.iterator.IteratorActivity;
 import br.com.nadod.designpatterns.mediator.MediatorActivity;
 import br.com.nadod.designpatterns.memento.MementoActivity;
 
@@ -53,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, BuilderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button iterator = (Button) findViewById(R.id.iteratorBut);
+        iterator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, IteratorActivity.class);
                 startActivity(intent);
             }
         });
